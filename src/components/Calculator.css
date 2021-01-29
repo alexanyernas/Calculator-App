@@ -1,0 +1,21 @@
+.container {
+
+    background-color: #AAA;
+    border: 4px solid #000;
+    box-shadow: 5px 5px 1px #000;
+    height: 350px;
+    left: 50%;
+    position: absolute;
+    top: 50%; 
+    transform: translate(-50%,-50%);
+    width: 300px;
+
+}
+
+.container_buttons {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 70px;
+    left: 8px;
+}

@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: content-box;
+}
+
+body {
+    background-color: #229395;
+}
