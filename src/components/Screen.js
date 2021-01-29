@@ -1,15 +1,15 @@
 import React from 'react';
-import './Screen.css';
+import '../styles/Screen.css';
 
 const Screen = () => {
     return (
-        <div className="container_screen">
-            <input 
-                className="screen" 
-                type="text" 
-                readOnly
-            />
-        </div>
+
+        <input 
+            className="screen" 
+            type="text"
+            readOnly
+        />
+        
     )
 }
 

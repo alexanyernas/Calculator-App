@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Calculator from './components/Calculator';
-import './index.css';
+import './styles/index.css';
 
 const divRoot = document.querySelector('#root');
 

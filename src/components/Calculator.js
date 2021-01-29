@@ -1,36 +1,37 @@
 import React from 'react';
 import Screen from './Screen';
 import Button from './Button';
-import './Calculator.css';
+import { values } from '../data/values';
+import '../styles/Calculator.css';
+import '../styles/Footer.css';
+import Footer from './Footer';
 
 const Calculator = () => {
 
-    const values = [
-        7, 8, 9, 'Del', 'AC',
-        4, 5, 6, '*', '/',
-        1, 2, 3, '+', '-',
-        0, '.' , 'EXP' , 'Ans' , '=',
-    ];
-
     return (
+        <>
+            <div className="container">
+                <div className="container_screen">
+                    <Screen />
+                </div>
 
-        <div className="container">
-            
-            <Screen /> 
+                <div className="container_buttons"> 
+                    {
+                        values.map(value => (
+                            <Button 
+                                key= { value } 
+                                value={ value } 
+                            />
+                        ))
+                    }
+                </div>
 
-            <div className="container_buttons"> 
-                {
-                    values.map(value => (
-                        <Button 
-                            key={values.indexOf(value)} 
-                            value={value} 
-                        />
-                    ))
-                }
             </div>
 
-        </div>
-    
+            <div className="container_footer">
+                <Footer />
+            </div>
+        </>
     )
 }
 
