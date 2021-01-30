@@ -20,7 +20,7 @@ const Calculator = () => {
                         values.map(value => (
                             <Button 
                                 key= { value } 
-                                value={ value } 
+                                value= { value } 
                             />
                         ))
                     }
