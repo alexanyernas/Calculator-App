@@ -1,13 +1,16 @@
 .btn {
+    border-radius: 25px;
     cursor: pointer;
     font-family: sans-serif;
     font-size: 1.3em;
     font-weight: 800;
     height: 60px;
     margin-left: 2px;
+    margin-bottom: 5px;
     text-align: center;
     transition: ease-in-out .1s;
     width: 50px;
+    outline: none;
 }
 
 .btn:hover {
@@ -16,3 +19,4 @@
     color: #FFF;
     font-size: 1.05em;
 }
+
