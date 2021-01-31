@@ -39,8 +39,15 @@ export const useCalculator = () => {
                 setValue( value + ans );
                 break;
 
+            case 'EXP':
+                setValue( value + 'E' );
+                break;
+
             case '=':
-                if ( test(value) ) {  
+                if ( !test(value) ) {
+                    document.querySelector('.screen').style.color = '#F00';  
+                } else {
+                    document.querySelector('.screen').style.color = '#000'; 
                     // eslint-disable-next-line no-eval
                     let result = eval(value).toString();
                     setValue( result );
